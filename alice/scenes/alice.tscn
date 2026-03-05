@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://4ifdjykc1u8w" path="res://alice/scripts/GameManager.cs" id="1_jtofc"]
 [ext_resource type="Script" uid="uid://c7hfxql0g0yn6" path="res://alice/scripts/DialogueTextBox.cs" id="1_os2nx"]
+[ext_resource type="Script" uid="uid://dkdelv7q1rpdx" path="res://alice/core/scripts/ui/MainMenuView.cs" id="3_xotyu"]
 
 [node name="UI" type="Control" unique_id=292708241]
 layout_mode = 3
@@ -34,3 +35,9 @@ offset_right = -16.0
 offset_bottom = -8.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="MainMenuView" type="Control" parent="." unique_id=2112279208]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_xotyu")

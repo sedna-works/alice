@@ -5,15 +5,15 @@ namespace Alice.UI;
 
 public partial class DialogueTextBox : Node
 {
-    private RichTextLabel _richLabel;
+	private RichTextLabel _richLabel;
 
-    public override void _Ready()
-    {
-        _richLabel = GetNode<RichTextLabel>("RichTextLabel");
-    }
+	public override void _Ready()
+	{
+		_richLabel = GetNode<RichTextLabel>("RichTextLabel");
+	}
 
-    public void ShowText(string text)
-    {
-        _richLabel.Text = text;
-    }
+	public void ShowText(string text)
+	{
+		_richLabel.Text = text;
+	}
 }
