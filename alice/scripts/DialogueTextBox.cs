@@ -1,9 +1,19 @@
 using Godot;
 using System;
 
-namespace Alice.UI
+namespace Alice.UI;
+
+public partial class DialogueTextBox : Node
 {
-    public partial class DialogueTextBox : GodotObject
+    private RichTextLabel _richLabel;
+
+    public override void _Ready()
     {
+        _richLabel = GetNode<RichTextLabel>("RichTextLabel");
+    }
+
+    public void ShowText(string text)
+    {
+        _richLabel.Text = text;
     }
 }

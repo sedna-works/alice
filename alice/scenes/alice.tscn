@@ -1,3 +1,36 @@
 [gd_scene format=3 uid="uid://b3pl1m4a50dw6"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="Script" uid="uid://4ifdjykc1u8w" path="res://alice/scripts/GameManager.cs" id="1_jtofc"]
+[ext_resource type="Script" uid="uid://c7hfxql0g0yn6" path="res://alice/scripts/DialogueTextBox.cs" id="1_os2nx"]
+
+[node name="UI" type="Control" unique_id=292708241]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jtofc")
+
+[node name="DialogueTextBox" type="Control" parent="." unique_id=1011887062]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -143.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_os2nx")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="DialogueTextBox" unique_id=2106623405]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = 14.0
+offset_right = -16.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
